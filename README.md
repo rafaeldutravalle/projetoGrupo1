@@ -17,10 +17,10 @@ Nº 	Etapas
   
 
 03 	Primeira proposta de canva - Daniel Neves  
-![Legenda](https://www.canva.com/design/DAGC9X7pzeU/UjGCRgxJnQMfHt0eBKrQzQ/edit)  
+![Legenda]() https://www.canva.com/design/DAGC9X7pzeU/UjGCRgxJnQMfHt0eBKrQzQ/edit  
 
 04 	Segunda proposta de canva - Deisielle Dutra  
-![Legenda](https://www.canva.com/design/DAGDL7gfe_c/yFSDAOE7p98toz5eXYzA4w/edit)  
+![Legenda](https://cdn.discordapp.com/attachments/1227297546670706770/1232141945480937543/73c5679c-f496-45a6-bfaa-f3c4797354a1.jpg?ex=6629b29b&is=6628611b&hm=6bd8c324c3cd7cd1757dfbf7617b02f1906bfea37978a237c5f4e73f8b98a053&) https://www.canva.com/design/DAGDL7gfe_c/yFSDAOE7p98toz5eXYzA4w/edit  
 
 ## Itegrantes
 
