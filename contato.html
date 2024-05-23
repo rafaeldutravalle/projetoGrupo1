@@ -4,13 +4,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css"> <title>Rede Veicular Cooperativa - Contato</title>
+	<title>Rede Veicular Cooperativa - Contato</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
 		<img src="./img/logo.webp">
 		<nav> 
 			<ul> 
+				<!-- ENGLOBEM CADA <a> DESSE COM UM LI, POR FAVOR. -->
 				<a href="./index.html">Home</a>
 				<a href="./sobrenos.html">Sobre nós</a> 
 				<a href="./vantagens.html">Vantagens</a>
@@ -20,10 +22,13 @@
 	</header>
 	<main> 
 		<h1 aliging=center>Contato</h1>
+		<!-- DAQUI PRA BAIXO PODEMOS SUBSTITUIR O H2 E H3 POR <p>, PESSOAL. -->
+		<!-- SE PRECISO FOR, UTILIZEM DIVS PARA SEPARAR OS CONTEÚDOS. -->
 		<h2 aliging=center>Dúvidas, dificuldads ou informações.</h2>
 		<h2 aliging=left>Envie um e-mail</h2>
 		<h3 aliging=left>Para entrar em contato conosco preencha o formulário abaixo:</h3>
 	</main>
+	<!-- ESSA TAG FORM DEVE ESTAR DENTRO DE MAIN. -->
 	<form method=""get" action="/receber_dados.php">
 		<input type="text" name="nome" placeholder="Nome completo">
 		<input type="e-mail" name="email" placeholder="E-mail de contato">
@@ -34,9 +39,12 @@
 	<footer>
 		<img src="./img/logo.webp"> 		
 		<ul>
+			<!-- SEPAREM CADA ITEM DAQUI DEBAIXO COM LI. -->
 			<img src="./img/contato.webp" alt="Central de atendimento 0800 000 003" title="Central de atendimento 0800 000 003">
 			<img src="./img/fone24h.webp" alt="Assistência 24 horas: 0800 000 004" title="Assistência 24 horas: 0800 000 004">
 			<h3>E-mail:</h3>
+			<!-- UTILIZEM <a> AQUI EMBAIXO. INCLUSIVE, DENTRO DE HREF VOCÊS PODEM PÔR mailto:contato@redecooperativa.com.br -->
+			<!-- DESSA FORMA, QUANDO O USUÁRIO CLICAR NO E-MAIL ELE SERÁ AUTOMATICAMENTE REDIRECIONADO PARA UM APLICATIVO OU PROGRAMA DE ENVIO DE E-MAILS. -->
 			<h3>contato@redecooperativa.com.br</h3>
 			<li>Facebook</li> <li>Instagram</li> <li>Linkedin</li>
 		</ul>
