@@ -1,5 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
 body {
-    background-image: "./img/logo.webp";
+    width: 100vw;
+    height: 100vw;
+    background-image: url("./img/carro1.webp");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 h1 {
