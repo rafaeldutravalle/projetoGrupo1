@@ -13,10 +13,10 @@
 		<nav> 
 			<ul> 
 				<!-- ENGLOBEM CADA <a> DESSE COM UM LI, POR FAVOR. -->
-				<a href="./index.html">Home</a>
-				<a href="./sobrenos.html">Sobre nós</a> 
-				<a href="./vantagens.html">Vantagens</a>
-				<a href="./contato.html">Contato</a>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./sobrenos.html">Sobre nós</a></li> 
+				<li><a href="./vantagens.html">Vantagens</a></li>
+				<li><a href="./contato.html">Contato</a></li>	
 			</ul>
 		</nav> 
 	</header>
@@ -24,28 +24,28 @@
 		<h1 aliging=center>Contato</h1>
 		<!-- DAQUI PRA BAIXO PODEMOS SUBSTITUIR O H2 E H3 POR <p>, PESSOAL. -->
 		<!-- SE PRECISO FOR, UTILIZEM DIVS PARA SEPARAR OS CONTEÚDOS. -->
-		<h2 aliging=center>Dúvidas, dificuldads ou informações.</h2>
-		<h2 aliging=left>Envie um e-mail</h2>
+		<p aliging=center>Dúvidas, dificuldads ou informações.</p>
+		<p aliging=left>Envie um e-mail</p>
 		<h3 aliging=left>Para entrar em contato conosco preencha o formulário abaixo:</h3>
-	</main>
-	<!-- ESSA TAG FORM DEVE ESTAR DENTRO DE MAIN. -->
-	<form method=""get" action="/receber_dados.php">
-		<input type="text" name="nome" placeholder="Nome completo">
-		<input type="e-mail" name="email" placeholder="E-mail de contato">
-		<input type="telefone" name="telefone" placeholder="Telefone">
-		<input type="mensagem" name="mensagem" placeholder="Mensagem">
-		<input type="submit" name="enviar" placeholder="Enviar mensagem">
-	</form>
+		<!-- ESSA TAG FORM DEVE ESTAR DENTRO DE MAIN. -->
+		<form method=""get" action="/receber_dados.php">
+			<input type="text" name="nome" placeholder="Nome completo">
+			<input type="e-mail" name="email" placeholder="E-mail de contato">
+			<input type="telefone" name="telefone" placeholder="Telefone">
+			<input type="mensagem" name="mensagem" placeholder="Mensagem">
+			<input type="submit" name="enviar" placeholder="Enviar mensagem">
+		</form>
+	</main>	
 	<footer>
 		<img src="./img/logo.webp"> 		
 		<ul>
 			<!-- SEPAREM CADA ITEM DAQUI DEBAIXO COM LI. -->
-			<img src="./img/contato.webp" alt="Central de atendimento 0800 000 003" title="Central de atendimento 0800 000 003">
-			<img src="./img/fone24h.webp" alt="Assistência 24 horas: 0800 000 004" title="Assistência 24 horas: 0800 000 004">
+			<li><img src="./img/contato.webp" alt="Central de atendimento 0800 000 003" title="Central de atendimento 0800 000 003"></li>
+			<li><img src="./img/fone24h.webp" alt="Assistência 24 horas: 0800 000 004" title="Assistência 24 horas: 0800 000 004"></li>
 			<h3>E-mail:</h3>
 			<!-- UTILIZEM <a> AQUI EMBAIXO. INCLUSIVE, DENTRO DE HREF VOCÊS PODEM PÔR mailto:contato@redecooperativa.com.br -->
 			<!-- DESSA FORMA, QUANDO O USUÁRIO CLICAR NO E-MAIL ELE SERÁ AUTOMATICAMENTE REDIRECIONADO PARA UM APLICATIVO OU PROGRAMA DE ENVIO DE E-MAILS. -->
-			<h3>contato@redecooperativa.com.br</h3>
+			<a href="mailto:contato@redecooperativa.com.br">contato@redecooperativa.com.br</a>
 			<li>Facebook</li> <li>Instagram</li> <li>Linkedin</li>
 		</ul>
 	</footer>
