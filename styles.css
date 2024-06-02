@@ -1,14 +1,68 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
-body {
+
+.carro1 {
     width: 100vw;
     height: 100vw;
     background-image: url("./img/carro1.webp");
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+.carro2::before{
+    content: '';
+    background-image: url("./img/carro2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /*opacity: 0,35;*/
+}
+
+.logo {
+    image-rendering: auto;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-start;
+    order: 1;
+    background-color: none;
+    color: none;
+    height: 10rem;
+    padding: 0 2.4rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;    
+    gap: 4rem;
+    list-style-type: none; 
+    align-items: center;
+    padding: 10px;
+    text-size-adjust: 40px;
+}
+
+.button {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    list-style-type: none;    
+    padding: 10px;
+    text-size-adjust: 50px;
 }
 
 h1 {
