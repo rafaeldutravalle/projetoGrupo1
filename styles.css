@@ -30,6 +30,12 @@
 .logo {
     image-rendering: auto;
 }
+
+header {
+    background-color: none;
+    display: flex;
+}
+
 nav {
     display: flex;
     flex-direction: row;
