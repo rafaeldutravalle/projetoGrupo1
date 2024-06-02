@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
 }
 
-.carro2::before{
+.carro2{
     content: '';
     background-image: url("./img/carro2.webp");
     background-size: cover;
@@ -23,7 +23,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    /*opacity: 0,35;*/
+    opacity: 0,35;
 }
 
 .logo {
