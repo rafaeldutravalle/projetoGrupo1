@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap">
 	<title>Rede Veicular Cooperativa - Contato</title>
 	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+  	<title>Seletores DOM</title>
 </head>
 <body>
 	<header>
@@ -32,10 +34,10 @@
 		<h3 aliging=left>Para entrar em contato conosco preencha o formulário abaixo:</h3>
 		<!-- ESSA TAG FORM DEVE ESTAR DENTRO DE MAIN. -->
 		<form method="get" action="/receber_dados.php">
-			<input type="text" name="nome" placeholder="Nome completo">
-			<input type="e-mail" name="email" placeholder="E-mail de contato">
-			<input type="telefone" name="telefone" placeholder="Telefone">
-			<input type="mensagem" name="mensagem" placeholder="Mensagem">
+			<input id=dados type="text" name="nome" placeholder="Nome completo">
+			<input id=dados type="e-mail" name="email" placeholder="E-mail de contato">
+			<input id=dados type="telefone" name="telefone" placeholder="Telefone">
+			<input id=mensagem type="mensagem" name="mensagem" placeholder="Mensagem">
 			<input type="submit" name="enviar" placeholder="Enviar mensagem">
 		</form>
 	</main>	
