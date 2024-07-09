@@ -29,9 +29,9 @@
 		<h1 aliging=center>Contato</h1>
 		<!-- DAQUI PRA BAIXO PODEMOS SUBSTITUIR O H2 E H3 POR <p>, PESSOAL. -->
 		<!-- SE PRECISO FOR, UTILIZEM DIVS PARA SEPARAR OS CONTEÚDOS. -->
-		<p aliging=center>Dúvidas, dificuldads ou informações.</p>
-		<p aliging=left>Envie um e-mail</p>
-		<h3 aliging=left>Para entrar em contato conosco preencha o formulário abaixo:</h3>
+		<h2 aliging=center>Dúvidas, dificuldads ou informações.</h2>
+		<h3 aliging=left>Envie um e-mail</h3>
+		<p aliging=left>Para entrar em contato conosco preencha o formulário abaixo:</p>
 		<!-- ESSA TAG FORM DEVE ESTAR DENTRO DE MAIN. -->
 		<form method="get" action="/receber_dados.php">
 			<input id=dados type="text" name="nome" placeholder="Nome completo">
@@ -40,9 +40,28 @@
 			<input id=mensagem type="mensagem" name="mensagem" placeholder="Mensagem">
 			<input type="submit" name="enviar" placeholder="Enviar mensagem">
 		</form>
+		<form>
+
+			<fieldset class="campo">
+			  <div>
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" id="nome">
+			  </div>
+		
+			  <div class="campo">
+				<label for="sobrenome">Sobrenome</label>
+				<input type="text" name="sobrenome" id="sobrenome">
+			  </div>
+		
+			  <div class="campo">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email">
+			  </div>
+			</fieldset>
+		</form>
 	</main>	
 	<footer>
-		<img src="./img/logo.webp"> 		
+		<!--<img src="./img/logo.webp"> -->		
 		<ul>
 			<!-- SEPAREM CADA ITEM DAQUI DEBAIXO COM LI. -->
 			<li><img src="./img/contato.webp" alt="Central de atendimento 0800 000 003" title="Central de atendimento 0800 000 003"></li>
