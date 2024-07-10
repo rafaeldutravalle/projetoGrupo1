@@ -30,6 +30,18 @@ Tema: Construção de um web site de seguro de automóveis.
 
 03 Tentativa de escrever os primeiros "HELLO WORLD!" em HTML, com barra de menu e formulário.
 
+### Nº 	Etapas - Sprint III
+
+01 Estilização mínima das páginas HTML.
+
+02 Uso do flex-box no ódigo.
+
+### Nº 	Etapas - Sprint IV
+
+01 Redenrização mínima da página "contato.html".
+
+02 Validação de formulário com JS.
+
 ## Itegrantes
 
 Deisielle Dutra  
