@@ -1,21 +1,54 @@
-//para acessar e salvar um elemento
-const mensagem = document.getElementById("mensagem"); 
+    const form   = document.getElementById('form');
+    const campos = document.querySelectorAll('.required');
+    const spans  = document.querySelectorAll('.span-required');
+    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-console.log(mensagem);
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        nameValidate();
+        emailValidate();
+        mainTelefoneValidate();        
+    });
 
-//para acessar e salvar mais de um elemento
-const perfil = document.getElementsByClassName("dados"); 
+    function setError(index){
+        campos[index].style.border = '2px solid #e63636';
+        spans[index].style.display = 'block';
+    }
 
-//console.log(perfil);
-console.log(perfil[0]);
+    function removeError(index){
+        campos[index].style.border = '';
+        spans[index].style.display = 'none';
+    }
 
-//selecionando elementos
-const segundoTitulo = document.querySelector("div h2"); 
+    function nameValidate(){
+        if(campos[0].value.length < 3)
+        {
+            setError(0);
+        }
+        else
+        {
+            removeError(0);
+        }
+    }
 
-console.log(segundoTitulo);
+    function emailValidate(){
+        if(!emailRegex.test(campos[1].value))
+        {
+            setError(1);
+        }
+        else
+        {
+            removeError(1);
+        }
+    }
 
-
-
-const textosPorClasse = document.querySelectorAll(".texto-simples"); 
-
-console.log(textosPorClasse);
+    function mainTelefoneValidate(){
+        if(campos[2].value.length < 8)
+        {
+            setError(2);
+        }
+        else
+        {
+            removeError(2);            
+        }
+    }

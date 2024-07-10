@@ -9,8 +9,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap">
 	<title>Rede Veicular Cooperativa - Contato</title>
 	<link rel="stylesheet" href="styles.css">
-	<script src="script.js" defer></script>
-  	<title>Seletores DOM</title>
+	<script src="script.js" defer></script>  	
 </head>
 <body>
 	<header>
@@ -26,52 +25,44 @@
 		</nav> 
 	</header>
 	<main> 
-		<h1 aliging=center>Contato</h1>
-		<!-- DAQUI PRA BAIXO PODEMOS SUBSTITUIR O H2 E H3 POR <p>, PESSOAL. -->
-		<!-- SE PRECISO FOR, UTILIZEM DIVS PARA SEPARAR OS CONTEÚDOS. -->
+		<h1 aliging=center>Contato</h1>		
 		<h2 aliging=center>Dúvidas, dificuldads ou informações.</h2>
 		<h3 aliging=left>Envie um e-mail</h3>
-		<p aliging=left>Para entrar em contato conosco preencha o formulário abaixo:</p>
-		<!-- ESSA TAG FORM DEVE ESTAR DENTRO DE MAIN. -->
-		<form method="get" action="/receber_dados.php">
-			<input id=dados type="text" name="nome" placeholder="Nome completo">
-			<input id=dados type="e-mail" name="email" placeholder="E-mail de contato">
-			<input id=dados type="telefone" name="telefone" placeholder="Telefone">
-			<input id=mensagem type="mensagem" name="mensagem" placeholder="Mensagem">
-			<input type="submit" name="enviar" placeholder="Enviar mensagem">
-		</form>
-		<form>
-
-			<fieldset class="campo">
-			  <div>
-				<label for="nome">Nome</label>
-				<input type="text" name="nome" id="nome">
-			  </div>
-		
-			  <div class="campo">
-				<label for="sobrenome">Sobrenome</label>
-				<input type="text" name="sobrenome" id="sobrenome">
-			  </div>
-		
-			  <div class="campo">
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email">
-			  </div>
-			</fieldset>
-		</form>
+		<p aliging=left>Para entrar em contato conosco preencha o formulário abaixo:</p>		
+		<div class="content">
+			<article class="article">
+				<form id="form" method="get" action="/receber_dados.php">
+					<div>
+						<input type="text" placeholder="Nome completo" class="inputs required" oninput="nameValidate()">
+						<span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+					</div>
+					<div>
+						<input type="email" placeholder="Digite seu email" class="inputs required" oninput="emailValidate()">
+						<span class="span-required">Digite um email válido</span>
+					</div>
+					<div>
+						<input type="telefone" placeholder="Telefone" class="inputs required" oninput="mainTelefoneValidate()">
+						<span class="span-required">Digite um telefone válido</span>
+					</div>
+					<textarea class="inputs" name="mensagem" id="descricao" cols="25" rows="10" placeholder="Escreva sua mensagem..."></textarea>
+					<button type="submit">Enviar mensagem</button>
+				</form>
+				<ul>
+					<div>
+					<li class="img1"><img src="./img/contato.webp" alt="Central de atendimento 0800 000 003" title="Central de atendimento 0800 000 003"></li>
+					<p>Central de atendimento 0800 000 003</p>
+					<li class="img2"><img src="./img/fone24h.webp" alt="Assistência 24 horas: 0800 000 004" title="Assistência 24 horas: 0800 000 004"></li>
+					<p>Assistência 24 horas: 0800 000 004</p>				
+					<p>E-mail:</p>			
+					<a href="mailto:contato@redecooperativa.com.br">contato@redecooperativa.com.br</a>
+					<li ref="Facebook">Facebook</li> <li ref="Instagram">Instagram</li> <li ref="linkedin">Linkedin</li>
+					</div>
+				</ul>
+			</article>
+		</div>
 	</main>	
 	<footer>
-		<!--<img src="./img/logo.webp"> -->		
-		<ul>
-			<!-- SEPAREM CADA ITEM DAQUI DEBAIXO COM LI. -->
-			<li><img src="./img/contato.webp" alt="Central de atendimento 0800 000 003" title="Central de atendimento 0800 000 003"></li>
-			<li><img src="./img/fone24h.webp" alt="Assistência 24 horas: 0800 000 004" title="Assistência 24 horas: 0800 000 004"></li>
-			<h3>E-mail:</h3>
-			<!-- UTILIZEM <a> AQUI EMBAIXO. INCLUSIVE, DENTRO DE HREF VOCÊS PODEM PÔR mailto:contato@redecooperativa.com.br -->
-			<!-- DESSA FORMA, QUANDO O USUÁRIO CLICAR NO E-MAIL ELE SERÁ AUTOMATICAMENTE REDIRECIONADO PARA UM APLICATIVO OU PROGRAMA DE ENVIO DE E-MAILS. -->
-			<a href="mailto:contato@redecooperativa.com.br">contato@redecooperativa.com.br</a>
-			<li>Facebook</li> <li>Instagram</li> <li>Linkedin</li>
-		</ul>
+		
 	</footer>
 </body>
 </html>
