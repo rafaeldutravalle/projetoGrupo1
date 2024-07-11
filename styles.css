@@ -91,23 +91,58 @@ nav ul li {
     list-style-type: none;
     margin: 16px;
     color: rgba(5, 5, 119, 0.884);
+    display: inline-block;  
 }
 
-.button {
-    display: inline-block;
-    justify-content: right;
-    font-family: "Helvetica Neue", sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-    border: 2px solid rgba(0, 0, 200, 0.6);
-    background: rgba(0, 0, 200, 0.3);
-    color: rgba(0, 0, 200, 0.6);
-    box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
-    border-radius: 10px;
-    padding: 3px 10px;
-    cursor: pointer;
+#link {
+    list-style-type: none;
+    margin: 16px;
+    color: rgba(5, 5, 119, 0.884);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
 }
+
+button{    
+    background:#7677dd;
+    color:#fff;
+    border:none;
+    position: relative right;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    text-align: right;
+  }
+
+  button:hover{
+    background:#fff;
+    color:#7677dd;
+  }
+
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right: 0;
+    height:2px;
+    width:0;
+    background: #7677dd;
+    transition:400ms ease all;
+  }
+
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
 
 h1 {
     color: rgba(5, 5, 119, 0.884);
