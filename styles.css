@@ -15,11 +15,22 @@
 }
 
 .carro1 {
+    display: table;
     width: 100vw;
     height: 100vw;
+    padding: 0;
+    text-align: right;
+    color: #fff;
     background-image: url("./img/carro1.webp");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: 30% 45%;
+    position: absolute;
+    background-color: black;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
 }
 
 .carro2 {
@@ -47,7 +58,7 @@
 header {
     background-color: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 8px;
     margin-top: 12px;
 }
