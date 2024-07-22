@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost"; // ou o endereço do seu servidor de banco de dados
-$username = "seu_usuario";
-$password = "sua_senha";
+$username = "contato";
+$password = "123456";
 $dbname = "cooperativa_veicular";
 
 // Cria a conexão
