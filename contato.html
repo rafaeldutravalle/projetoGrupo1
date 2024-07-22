@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap">
-	<title>Rede Veicular Cooperativa - Contato</title>
-	<link rel="stylesheet" href="./styles/contato.css">
-	<script src="script.js" defer></script>  	
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<title>Rede Veicular Cooperativa - Contato</title>
+		<link rel="stylesheet" href="./styles/contato.css">
+		<script src="script.js" defer></script>  
+	</head>	
 <body>
-	<header class="logo">
-		<!--<img src="./img/logo.png">-->
-		<nav> 
-			<ul> 
-				<!-- ENGLOBEM CADA <a> DESSE COM UM LI, POR FAVOR. -->
-				<li><a id="link" href="./index.html">Home</a></li>
-				<li><a id="link" href="./sobrenos.html">Sobre nós</a></li> 
-				<li><a id="link" href="./vantagens.html">Vantagens</a></li>
-				<li><a id="link" href="./contato.html">Contato</a></li>		
-			</ul>
-		</nav> 
-	</header>
-	<main> 
-		<h1 aliging=center>Contato</h1>		
-		<h2 aliging=center>Dúvidas, dificuldads ou informações.</h2>
-		<h3 aliging=left>Envie um e-mail</h3>
-		<p aliging=left>Para entrar em contato conosco preencha o formulário abaixo:</p>		
-		<div class="content">
-			<article class="article">
-				<form id="form" method="get" action="/receber_dados.php">
+    <header class="header">
+        <div class="logo">
+            <!-- Logo Image -->
+        </div>
+        <nav>
+            <ul>
+                <li><a id="link" href="./index.html">Home</a></li>
+                <li><a id="link" href="./sobrenos.html">Sobre nós</a></li>
+                <li><a id="link" href="./vantagens.html">Vantagens</a></li>
+                <li><a id="link" href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="center-content">
+            <h1>Contato</h1>
+            <h2>Dúvidas, dificuldades ou informações.</h2>
+        </div>
+        <div class="main-content">
+            <div class="left-content">
+                <h3>Envie um e-mail</h3>
+                <form id="form" method="post" action="/receber_dados.php">
 					<div>
 						<input type="text" placeholder="Nome completo" class="inputs required" oninput="nameValidate()">
 						<span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
@@ -41,28 +44,34 @@
 						<span class="span-required">Digite um email válido</span>
 					</div>
 					<div>
-						<input type="telefone" placeholder="Telefone" class="inputs required" oninput="mainTelefoneValidate()">
+						<input type="tel" placeholder="Telefone" class="inputs required" oninput="mainTelefoneValidate()">
 						<span class="span-required">Digite um telefone válido</span>
 					</div>
 					<textarea class="inputs" name="mensagem" id="descricao" cols="25" rows="10" placeholder="Escreva sua mensagem..."></textarea>
 					<button type="submit">Enviar mensagem</button>
-				</form>
-				<ul>
-					<div>
-					<li class="img1"><img src="./img/contato.png" width="250px" height="250px" alt="Central de atendimento 0800 000 003" title="Central de atendimento 0800 000 003"></li>
-					<p>Central de atendimento 0800 000 003</p>
-					<li class="img2"><img src="./img/fone24h.webp" width="250px" height="250px" alt="Assistência 24 horas: 0800 000 004" title="Assistência 24 horas: 0800 000 004"></li>
-					<p>Assistência 24 horas: 0800 000 004</p>				
-					<p>E-mail:</p>			
-					<a href="mailto:contato@redecooperativa.com.br">contato@redecooperativa.com.br</a>
-					<li ref="Facebook">Facebook</li> <li ref="Instagram">Instagram</li> <li ref="linkedin">Linkedin</li>
-					</div>
-				</ul>
-			</article>
-		</div>
-	</main>	
-	<footer>
-		
-	</footer>
+				</form>				
+            </div>
+            <div class="right-content">
+                <div class="contact-item">
+                    <img src="./img/contato.png" width="250px" height="250px" alt="Central de atendimento 0800 000 003" title="Central de atendimento 0800 000 003">
+                    <p>Central de atendimento 0800 000 003</p>
+                </div>
+                <div class="contact-item">
+                    <img src="./img/fone24h.webp" width="250px" height="250px" alt="Assistência 24 horas: 0800 000 004" title="Assistência 24 horas: 0800 000 004">
+                    <p>Assistência 24 horas: 0800 000 004</p>
+                </div>
+                <p>E-mail:</p>
+                <a href="mailto:contato@redecooperativa.com.br">contato@redecooperativa.com.br</a>
+                <div class="social-links">
+					<a href="https://www.facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Adicione conteúdo aqui -->
+    </footer>
 </body>
 </html>
