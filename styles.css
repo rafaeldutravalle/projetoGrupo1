@@ -14,24 +14,79 @@
     font-family: 'Maven Pro', sans-serif;
 }
 
-.carro1 {
-    display: table;
-    width: 100vw;
-    height: 100vw;
-    padding: 0;
-    text-align: right;
-    color: #fff;
-    background-image: url("./img/carro1.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 30% 45%;
-    position: absolute;
-    background-color: black;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain;
+.main {
+    align-items: right;
 }
+
+/*.carro1 {
+    background-image: url("./img/carro1.webp");
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+}*/
+
+
+@media (min-width: 768px) {
+    .carro1
+{
+    background-image: url("./img/carro1.webp");
+    background-repeat: no-repeat;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+}
+/*
+@media (max-width: 992px) {
+    .carro1
+  {
+      background-image: url("./img/carro1.webp");
+      background-repeat: no-repeat;
+      bottom: 0;
+      color: black;
+      left: 0;
+      overflow: auto;
+      padding: 3em;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;  
+  }
+  }
+  
+  @media (max-width: 1200px) {
+     .carro1
+  {
+      background-image: url("./img/carro1.webp");
+      background-repeat: no-repeat;
+      bottom: 0;
+      color: black;
+      left: 0;
+      overflow: auto;
+      padding: 3em;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;  
+  }
+  }*/
 
 .carro2 {
     content: '';
@@ -77,8 +132,8 @@ nav {
 
 ul {
     height: 100%;
-    display: flex;
-    align-items: center;
+    display: right;
+    align-items: right;
     justify-content: space-between;
     gap: 4rem;
     text-size-adjust: 40px;
@@ -106,7 +161,7 @@ button{
     background:#7677dd;
     color:#fff;
     border:none;
-    position: relative right;
+    position: right;
     height:60px;
     font-size:1.6em;
     padding:0 2em;

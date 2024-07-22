@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --color-white: #fff;
+    --color-red: #e63636;
+    --color-dark1: #cdd4d677;
+    --color-dark2: #c9d1d477;
+    --color-bleu: #04058f;
+    --color-purple: indigo;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .carro1
+{
+    background-image: url("../img/carro1.webp");
+    background-repeat: no-repeat;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+}
+
+@media (max-width: 992px) {
+    .carro1
+  {
+      background-image: url("../img/carro1.webp");
+      background-repeat: no-repeat;
+      bottom: 0;
+      color: black;
+      left: 0;
+      overflow: auto;
+      padding: 3em;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;  
+  }
+  }
+  
+  @media (max-width: 1200px) {
+     .carro1
+  {
+      background-image: url("../img/carro1.webp");
+      background-repeat: no-repeat;
+      bottom: 0;
+      color: black;
+      left: 0;
+      overflow: auto;
+      padding: 3em;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;  
+  }
+  }
+
+  @media (min-width: 768px) {
+    .logo {
+        width:200px;
+        height:80px;
+        background:url("../img/logo.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        width:400px;
+        height:220px;
+        background:url("../img/logo.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width:800px;
+        height:440px;
+        background:url("../img/logo.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+}
+
+header {
+    overflow: hidden;
+    padding: 20px 10px;
+  }
+
+nav {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+nav ul {
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    align-items: center;
+    margin: 10 10 10 10px;
+}
+
+#link {
+    margin: 16px;
+    color: var(--color-bleu);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+button{    
+    background:#7677dd;
+    color:#fff;
+    border:none;
+    position: right;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    text-align: right;
+  }
+
+  button:hover{
+    background:#fff;
+    color:#7677dd;
+  }
+
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right: 0;
+    height:2px;
+    width:0;
+    background: #7677dd;
+    transition:400ms ease all;
+  }
+
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
