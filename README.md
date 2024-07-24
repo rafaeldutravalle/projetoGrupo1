@@ -12,7 +12,7 @@ Tema: Construção de um web site de seguro de automóveis.
 
 01 	Definição do tema na Discord - melhor proposta dada por Ramon Rezende.  
 
-02 	Proposta de repositório com Git e GitHub - Rafael Dutra
+02 	Proposta de repositório com Git e GitHub - Rafael Valle
 ![Legenda](https://github.com/rafaeldutravalle/projetoGrupo1.git)
   
 
@@ -42,9 +42,15 @@ Tema: Construção de um web site de seguro de automóveis.
 
 02 Validação de formulário com JS.
 
+### Nº 	Etapas - Sprint V
+
+01 Diagrama ER de um sistema de login.
+
+02 Consultas SQL.
+
 ## Itegrantes
 
 Deisielle Dutra  
 Daniel Neves  
 Ramon Rezende  
-Rafael Dutra  
+Rafael Valle  
